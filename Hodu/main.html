@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hodu</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d024fb57c1736e19f0715843399c2c4"></script>
+    <script type="text/javascript" src="kakaoMap.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="topBackground">
+        <header>
+            <img class="headLogoImg" src="resources/headLogo.png" alt="Hodu Logo">
+            <div class="headerBtnGroup">
+                <nav class="headNav">
+                    <button class="navBtn"><span class="navBtnFont">Home</span></button>
+                    <button class="navBtn"><span class="navBtnFont">About</span></button>
+                    <button class="navBtn"><span class="navBtnFont">Support</span></button>
+                </nav>
+                <button class="downloadBtn"><span class="downloadBtnText">Download</span></button>
+            </div>
+        </header>
+
+
+        <section class="introductionSection">
+            <div class="introductionLeft">
+                <div class="introductionTitle">
+                    <span class="baseBoldFont">Lorem Ipsum is simply<br>dummy text of the printing and</span>
+                </div>
+                <div class="introductionPhrase">
+                <span class="baseFont">Lorem Ipsum is simply dummy text of the printing and <br>
+                    typesetting industry. <br>
+                    Lorem Ipsum has been the industry's standard dummy text <br>
+                    ever since the 1500s, when an unknown
+                </span>
+                </div>
+                <button class="downloadBtn"><span class="downloadBtnText">Download</span></button>
+            </div>
+            <img class="introductionImg" src="resources/introImg.png">
+        </section>
+    </div>
+
+    <section class="photoAlbumSection">
+        <div class="photoAlbumTitle">
+            <img class="photoAlbumTitle_Img imgShadow" src="resources/hodu_main.png" alt="">
+            <div class="photoAlbumTitle_Desc">
+                <span class="baseBoldFont" style="font-size: 34px">
+                    Lorem Ipsum is simply<br>
+                    dummy text of the printing<br>
+                    and dummy text
+                </span>
+                <span class="baseFont">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+                    industry.
+                </span>
+            </div>
+        </div>
+
+        <div class="photoAlbumDesc">
+            <span class="baseBoldFont highlightText">dummy text of the printing and dummy</span>
+            <span class="baseFont">
+                Lorem Ipsum is simply <span class="highlightText">dummy text</span> of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            </span>
+        </div>
+
+        <div class="photoAlbumGridContainer">
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_001.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_002.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_003.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_004.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_005.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_006.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_007.png" alt="">
+            </article>
+
+            <article class="photoAlbumGridItem imgShadow">
+                <img class="photoAlbum_img" src="resources/Album/hodu_008.png" alt="">
+            </article>
+        </div>
+
+        <div class="gridAdd">
+            <span class="baseBoldFont gridAddDesc">Continue exploring HODU</span>
+            <button class="downloadBtn"><span class="downloadBtnText">Show more</span></button>
+        </div>
+    </section>
+
+    <div class="separateLine">
+
+    </div>
+
+    <section class="mapViewerSection">
+        <div class="mapViewerDesc">
+            <span class="baseBoldFont">Where you’ll be</span>
+            <span class="baseFont">	31, Guil-ro 8-gil, Guro-gu, Seoul, Republic of Korea</span>
+        </div>
+
+        <div class="mapViewer" id="map"></div>
+    </section>
+
+    <section class="subscribeSection">
+        <div class="subscribePost">
+            <div class="subscribeTitle">
+                <span class="baseBoldFont" style="font-size: 36px">Subscribe to our Blog post</span>
+                <span class="baseFont" style="font-size: 14px">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text
+                </span>
+            </div>
+
+            <div class="subscribeInput">
+                <img src="resources/mail.svg" alt="" style="margin-left: 28px">
+                <input class="subscribeInputField baseFont" type="text" placeholder="Enter your e-mail address">
+                <button class="downloadBtn subscribeButton"><span class="downloadBtnText">Subscribe</span></button>
+            </div>
+
+
+        </div>
+        <div class="subscribeBackgroundBox">
+            <img class="subscribeBackground" src="resources/outroImg.png" alt="">
+        </div>
+    </section>
+</div>
+<footer>
+    <img class="footerLogo" src="resources/footerLogo.png" alt="">
+    <div class="footerNav">
+        <div class="footerNavBtn"><img class="footerNavIcon" src="resources/Icons/blog.png" alt=""></div>
+        <div class="footerNavBtn"><img class="footerNavIcon" src="resources/Icons/instagram.png" alt=""></div>
+        <div class="footerNavBtn"><img class="footerNavIcon" src="resources/Icons/facebook.png" alt=""></div>
+        <div class="footerNavBtn"><img class="footerNavIcon" src="resources/Icons/youtube.png" alt=""></div>
+    </div>
+</footer>
+
+<script>
+
+</script>
+</body>
+</html>
