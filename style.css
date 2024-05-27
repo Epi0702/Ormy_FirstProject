@@ -142,9 +142,15 @@ button
     box-sizing: border-box;
 }
 
+.logoBtn
+{
+    width: clamp(92px, 67%, 130px);
+    border: none;
+    background-color: transparent;
+}
 
 .headLogoImg {
-    width: clamp(92px, 67%, 130px);
+
 
     object-fit: cover;
 }
@@ -790,7 +796,7 @@ footer {
 
     }
 
-    .headLogoImg {
+    .logoBtn {
         width: calc(92px + (38 * ((100vw - 390px) / (768 - 390))));
     }
 
