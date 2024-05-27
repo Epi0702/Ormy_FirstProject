@@ -34,16 +34,24 @@ ul {
 
 li {
     text-align: end;
+    color: black;
 }
 
 a {
     text-decoration: none;
 }
 
+button
+{
+    cursor: pointer;
+}
+
 .baseFont {
     font-family: Pretendard-Regular, serif;
     /*font-size: 16px;*/
     font-weight: 400;
+
+    color: black;
 }
 
 .baseBoldFont {
