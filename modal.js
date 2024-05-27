@@ -1,9 +1,13 @@
 const modal = document.querySelector('.modal');
 const modalShowBtn = document.querySelector('.subscribeButton');
-const modalHideBtn = document.querySelector('.closeModal');
+const modalHideBtn = document.querySelectorAll('.closeModal');
 
 modalShowBtn.addEventListener('click', ShowModal);
-modalHideBtn.addEventListener('click', HideModal);
+// modalHideBtn.addEventListener('click', HideModal);
+
+modalHideBtn.forEach(button => {
+    button.addEventListener('click', HideModal);
+})
 
 
 function ShowModal() {
