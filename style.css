@@ -112,6 +112,12 @@ button
 
 .orangeBtn {
     background-color: #D97652;
+
+}
+
+.orangeBtn:hover
+{
+    background-color: #AF5232;
 }
 
 .colorBtnText {
