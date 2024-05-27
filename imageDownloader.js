@@ -4,18 +4,17 @@ downloadBtn.forEach(button =>{
     button.addEventListener('click', DownloadFile);
 })
 
-function DownloadFile()
+function DownloadFile(event)
 {
     const link = document.createElement('a');
-    const button = event.currentTarget;
+    const newFileName = 'temp.png'
 
-    const file = button.getAttribute('data-file');
-
-    link.href = 'resources/introImg.png';
-    link.download = file;
+    link.href = 'resources/main/introImg.png';
+    link.download = newFileName;
 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
 
 }
